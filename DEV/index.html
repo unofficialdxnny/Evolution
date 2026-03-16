@@ -6,66 +6,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Evolution | Modern Gaming Store</title>
     <meta name="description" content="Evolution - Your ultimate destination for games, hardware, and reviews.">
-    <!-- FontAwesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="./Assets/css/style.css">
 </head>
 
 <body>
-    <header class="cex-header">
-        <div class="cex-nav-wrapper">
-            <div class="cex-top-row">
-                <!-- Menu -->
-                <button class="cex-menu-btn">
-                    <i class="fa-solid fa-bars"></i>
-                    <span>Menu</span>
-                </button>
 
-                <!-- Logo -->
-                <a href="/" class="cex-logo">
-                    <!-- Basic simulation of Logo using text if SVG isn't available -->
-                    <span class="logo-circle">
-                        <span class="logo-text">cex</span>
-                    </span>
-                </a>
-
-                <!-- Search Bar -->
-                <div class="cex-search-container">
-                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
-                    <input type="text" placeholder="What do you want to buy?" class="cex-search-input">
-                </div>
-
-                <!-- Account / Basket Actions -->
-                <div class="cex-actions">
-                    <a href="/login" class="cex-action-btn">
-                        <i class="fa-regular fa-user"></i>
-                        <span>Sign in</span>
-                    </a>
-                    <a href="/basket" class="cex-action-btn">
-                        <i class="fa-solid fa-basket-shopping"></i>
-                        <span>Basket</span>
-                    </a>
-                </div>
-
-                <!-- Sell Button -->
-                <a href="/sell" class="cex-sell-btn">
-                    Sell to CeX
-                </a>
-            </div>
-
-            <!-- Bottom Categories Row -->
-            <nav class="cex-bottom-row">
-                <a href="/home">Home</a>
-                <a href="/gaming">Gaming</a>
-                <a href="/phones">Phones</a>
-                <a href="/computing">Computing</a>
-                <a href="/electronics">Electronics</a>
-                <a href="/film-tv">Film & TV</a>
-                <a href="/new-accessories">New Accessories</a>
-                <a href="/apparel">Apparel</a>
-            </nav>
+    <div class="navigation">
+        <div class="brand">
+            <span class="icon">
+                <ion-icon name="layers-outline"></ion-icon>
+            </span>
+            <span class="title">EVOLUTION</span>
         </div>
-    </header>
+        <ul>
+            <li class="list active" data-target="home">
+                <b></b>
+                <b></b>
+                <a href="#">
+                    <span class="icon">
+                        <ion-icon name="home-outline"></ion-icon>
+                    </span>
+                    <span class="title">Home</span>
+                </a>
+            </li>
+            <li class="list" data-target="games">
+                <b></b>
+                <b></b>
+                <a href="#">
+                    <span class="icon">
+                        <ion-icon name="game-controller-outline"></ion-icon>
+                    </span>
+                    <span class="title">Games</span>
+                </a>
+            </li>
+            <li class="list" data-target="hardware">
+                <b></b>
+                <b></b>
+                <a href="#">
+                    <span class="icon">
+                        <ion-icon name="hardware-chip-outline"></ion-icon>
+                    </span>
+                    <span class="title">Hardware</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="toggle">
+        <ion-icon name="menu-outline" class="open"></ion-icon>
+        <ion-icon name="close-outline" class="close"></ion-icon>
+    </div>
+
+    <div class="main-content">
+        <div id="home" class="section active">
+            <h1>Evolution</h1>
+            <p>This is Evolution, One Stop for all your gaming needs.</p>
+        </div>
+        <div id="games" class="section">
+            <h1>Games Library</h1>
+            <p>Browse our extensive collection of titles across all genres.</p>
+        </div>
+        <div id="hardware" class="section">
+            <h1>Hardware Store</h1>
+            <p>Find the best gear to upgrade your battle station and improve your performance.</p>
+        </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
     <script src="Assets/js/main.js"></script>
 </body>
