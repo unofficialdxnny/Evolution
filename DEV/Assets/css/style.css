@@ -1,134 +1,185 @@
-:root {
-    /* Color Palette */
-    --bg-color: #050505;
-    --text-color: #f0f0f0;
-    --primary-color: #00ffcc;
-    /* Neon Cyan */
-    --secondary-color: #7000ff;
-    /* Deep Purple */
-    --card-bg: rgba(255, 255, 255, 0.03);
-    --nav-height: 80px;
-}
-
+/* Reset Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 body {
-    font-family: 'Outfit', sans-serif;
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    line-height: 1.6;
-    overflow-x: hidden;
-    padding-left: var(--nav-height);
+    background-color: #f5f5f5; /* Light grey for rest of the page to make nav pop */
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-ul {
-    list-style: none;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.highlight {
-    color: var(--primary-color);
-    text-shadow: 0 0 15px rgba(0, 255, 204, 0.4);
-}
-
-/* Navbar */
-.navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: var(--nav-height);
-    height: 100vh;
-    background: rgba(5, 5, 5, 0.7);
-    backdrop-filter: blur(15px);
-    z-index: 1000;
-    border-right: 1px solid rgba(255, 255, 255, 0.05);
-    transition: all 0.3s ease;
-}
-
-.nav-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    height: 100%;
-    padding: 30px 0;
-}
-
-.logo {
-    font-family: 'Rajdhani', sans-serif;
-    font-size: 2.2rem;
-    font-weight: 700;
-    background: linear-gradient(45deg, var(--primary-color), #fff);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: transparent;
-    margin-bottom: 50px;
-}
-
-.nav-links {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
+/* Header Container */
+.cex-header {
+    background-color: #E30A17; /* CeX Red */
     width: 100%;
+}
+
+.cex-nav-wrapper {
+    max-width: 1400px; /* Constrain width on ultrawide */
+    margin: 0 auto;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Top Row styling */
+.cex-top-row {
+    display: flex;
     align-items: center;
-    height: 100%;
+    justify-content: space-between;
+    gap: 20px;
 }
 
-.nav-bottom {
-    margin-top: auto;
+/* Menu Button */
+.cex-menu-btn {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 600;
+    gap: 4px;
 }
 
-.nav-links a {
-    font-size: 1.5rem;
-    color: rgba(255, 255, 255, 0.7);
-    transition: all 0.3s ease;
+.cex-menu-btn i {
+    font-size: 24px;
+}
+
+/* Logo simulation (If replacing with an image, just override text) */
+.cex-logo {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-circle {
+    background-color: white;
+    box-shadow: 0 0 0 2px black, inset 0 0 0 2px #E30A17, inset 0 0 0 4px black;
+    border-radius: 50px; /* roughly pill shape */
+    padding: 5px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(-10deg);
+}
+
+.logo-text {
+    font-weight: 900;
+    font-size: 24px;
+    color: #E30A17; /* Red inside text */
+    text-transform: lowercase;
+    text-shadow: 1px 1px 0 black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
+    letter-spacing: -1.5px;
+}
+
+
+/* Search Container */
+.cex-search-container {
+    flex-grow: 1;
     position: relative;
+    max-width: 800px; /* Makes it expansive but not unbounded */
+}
+
+.search-icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #666;
+    font-size: 16px;
+}
+
+.cex-search-input {
+    width: 100%;
+    padding: 12px 15px 12px 45px; /* Leave space for icon */
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    background-color: white;
+    color: #000;
+}
+
+.cex-search-input::placeholder {
+    color: #666;
+    font-weight: 500;
+}
+
+/* Account and Basket */
+.cex-actions {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.cex-action-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    gap: 6px;
+}
+
+.cex-action-btn i {
+    font-size: 20px;
+}
+
+/* Sell button */
+.cex-sell-btn {
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    transition: background-color 0.2s;
+    white-space: nowrap;
+}
+
+.cex-sell-btn:hover {
+    background-color: #f0f0f0;
+}
+
+/* Bottom Category Row */
+.cex-bottom-row {
     display: flex;
     justify-content: center;
-    align-items: center;
-    width: 50px;
-    height: 50px;
-    border-radius: 12px;
+    gap: 30px;
+    padding-bottom: 5px;
 }
 
-.nav-links a::after {
-    content: '';
-    position: absolute;
-    left: -15px;
-    /* Offset to align with left edge */
-    top: 10%;
-    height: 80%;
-    width: 3px;
-    background: var(--primary-color);
-    transition: transform 0.3s ease;
-    transform: scaleY(0);
-    box-shadow: 0 0 10px var(--primary-color);
-    border-radius: 0 4px 4px 0;
+.cex-bottom-row a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 700;
+    transition: opacity 0.2s;
 }
 
-.nav-links a:hover,
-.nav-links a.active {
-    color: var(--primary-color);
-    background: rgba(0, 255, 204, 0.1);
-    transform: scale(1.1);
+.cex-bottom-row a:hover {
+    opacity: 0.8;
 }
 
-.nav-links a:hover::after,
-.nav-links a.active::after {
-    transform: scaleY(1);
+/* Responsive adjustment */
+@media (max-width: 900px) {
+    .cex-bottom-row {
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+    }
+    .cex-sell-btn {
+        display: none; /* Often hidden on smaller screens unless in menu */
+    }
 }
