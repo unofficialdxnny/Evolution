@@ -4,7 +4,7 @@ let mainContent = document.querySelector(".main-content");
 menuToggle.onclick = function () {
     menuToggle.classList.toggle("active");
     Navigation.classList.toggle("active");
-    if(mainContent) {
+    if (mainContent) {
         mainContent.classList.toggle("active");
     }
 };
@@ -21,12 +21,12 @@ for (let i = 0; i < list.length; i++) {
         }
         list[i].className = "list active";
 
-        if(sections.length > 0) {
+        if (sections.length > 0) {
             sections.forEach(sec => sec.classList.remove("active"));
             let target = list[i].getAttribute("data-target");
-            if(target) {
+            if (target) {
                 let targetSection = document.getElementById(target);
-                if(targetSection) {
+                if (targetSection) {
                     targetSection.classList.add("active");
                 }
             }

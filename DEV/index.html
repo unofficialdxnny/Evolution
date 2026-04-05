@@ -58,16 +58,471 @@
 
     <div class="main-content">
         <div id="home" class="section active">
-            <h1>Evolution</h1>
-            <p>This is Evolution, One Stop for all your gaming needs.</p>
+            <div class="hero">
+                <div class="hero-content">
+                    <h1>Discover the Next Generation of Gaming</h1>
+                    <p>Evolution brings you the latest titles, unparalleled hardware, and a community of millions. Your
+                        ultimate gaming journey starts here.</p>
+                    <div class="hero-buttons">
+                        <button class="btn-primary"
+                            onclick="document.querySelector('[data-target=\'games\']').click()">Explore Games</button>
+                        <button class="btn-secondary"
+                            onclick="document.querySelector('[data-target=\'hardware\']').click()">Shop
+                            Hardware</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <ion-icon name="cloud-download-outline"></ion-icon>
+                    <h3>Instant Delivery</h3>
+                    <p>Get your digital keys instantly after purchase.</p>
+                </div>
+                <div class="feature-card">
+                    <ion-icon name="shield-checkmark-outline"></ion-icon>
+                    <h3>Secure Checkout</h3>
+                    <p>100% secure payments with buyer protection.</p>
+                </div>
+                <div class="feature-card">
+                    <ion-icon name="headset-outline"></ion-icon>
+                    <h3>24/7 Support</h3>
+                    <p>Our gaming experts are always here to help.</p>
+                </div>
+            </div>
         </div>
+
         <div id="games" class="section">
             <h1>Games Library</h1>
             <p>Browse our extensive collection of titles across all genres.</p>
+            <br>
+
+            <h2 class="subheading">Recently Released</h2>
+            <div class="games">
+
+                <div class="banner_wrapper">
+                    <div class="banner">
+                        <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/252490/header.jpg"
+                            alt="Banner Game" class="banner__image">
+                    </div>
+                    <div class="card__wrapper">
+                        <div class="card">
+                            <div class="card__info">
+                                <img src="https://files.facepunch.com/lewis/1b2911b1/rust-marque.svg" alt="Game"
+                                    class="card__avatar">
+                                <div>
+                                    <span>Rust</span>
+                                    <p>Wilderness</p>
+                                </div>
+                            </div>
+                            <button>Get</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="banner_wrapper">
+                    <div class="banner">
+                        <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4000/header.jpg"
+                            alt="Banner Game" class="banner__image">
+                    </div>
+                    <div class="card__wrapper">
+                        <div class="card">
+                            <div class="card__info">
+                                <img src="https://files.facepunch.com/lewis/1b1311b1/gmod-logo.svg" alt="Game"
+                                    class="card__avatar">
+                                <div>
+                                    <span>Garry's Mod</span>
+                                    <p>Physics Sandbox</p>
+                                </div>
+                            </div>
+                            <button>Get</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="banner_wrapper">
+                    <div class="banner">
+                        <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1567020/capsule_616x353.jpg?t=1676560649"
+                            alt="Banner Game" class="banner__image">
+                    </div>
+                    <div class="card__wrapper">
+                        <div class="card">
+                            <div class="card__info">
+                                <img src="https://static.bandainamcoent.eu/high/the-dark-pictures/the-devil-in-me/00-page-setup/tdim_header_mobile_new-keyart.jpg"
+                                    alt="Game" class="card__avatar">
+                                <div>
+                                    <span>The Devil In Me</span>
+                                    <p>Survivor Horror</p>
+                                </div>
+                            </div>
+                            <button>Get</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="banner_wrapper">
+                    <div class="banner">
+                        <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1966720/header.jpg"
+                            alt="Banner Game" class="banner__image">
+                    </div>
+                    <div class="card__wrapper">
+                        <div class="card">
+                            <div class="card__info">
+                                <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1966720/header.jpg"
+                                    alt="Game" class="card__avatar">
+                                <div>
+                                    <span>Lethal Company</span>
+                                    <p>Co-op Horror</p>
+                                </div>
+                            </div>
+                            <button>Get</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="banner_wrapper">
+                    <div class="banner">
+                        <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2881650/header.jpg"
+                            alt="Banner Game" class="banner__image">
+                    </div>
+                    <div class="card__wrapper">
+                        <div class="card">
+                            <div class="card__info">
+                                <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2881650/header.jpg"
+                                    alt="Game" class="card__avatar">
+                                <div>
+                                    <span>Content Warning</span>
+                                    <p>Co-op Horror</p>
+                                </div>
+                            </div>
+                            <button>Get</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <h2 class="subheading">Trending</h2>
+            <div class="games">
+
+                <div class="banner_wrapper">
+                    <div class="banner">
+                        <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/271590/header.jpg"
+                            alt="Banner Game" class="banner__image">
+                    </div>
+                    <div class="card__wrapper">
+                        <div class="card">
+                            <div class="card__info">
+                                <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/271590/header.jpg"
+                                    alt="Game" class="card__avatar">
+                                <div>
+                                    <span>Grand Theft Auto V</span>
+                                    <p>Action / Open World</p>
+                                </div>
+                            </div>
+                            <button>Get</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="banner_wrapper">
+                    <div class="banner">
+                        <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/413150/header.jpg"
+                            alt="Banner Game" class="banner__image">
+                    </div>
+                    <div class="card__wrapper">
+                        <div class="card">
+                            <div class="card__info">
+                                <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/413150/header.jpg"
+                                    alt="Game" class="card__avatar">
+                                <div>
+                                    <span>Stardew Valley</span>
+                                    <p>Farming Sim</p>
+                                </div>
+                            </div>
+                            <button>Get</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="banner_wrapper">
+                    <div class="banner">
+                        <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/648800/header.jpg"
+                            alt="Banner Game" class="banner__image">
+                    </div>
+                    <div class="card__wrapper">
+                        <div class="card">
+                            <div class="card__info">
+                                <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/648800/header.jpg"
+                                    alt="Game" class="card__avatar">
+                                <div>
+                                    <span>Raft</span>
+                                    <p>Survival</p>
+                                </div>
+                            </div>
+                            <button>Get</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="banner_wrapper">
+                    <div class="banner">
+                        <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/header.jpg"
+                            alt="Banner Game" class="banner__image">
+                    </div>
+                    <div class="card__wrapper">
+                        <div class="card">
+                            <div class="card__info">
+                                <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/header.jpg"
+                                    alt="Game" class="card__avatar">
+                                <div>
+                                    <span>Helldivers 2</span>
+                                    <p>Co-op Shooter</p>
+                                </div>
+                            </div>
+                            <button>Get</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="banner_wrapper">
+                    <div class="banner">
+                        <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1623730/header.jpg"
+                            alt="Banner Game" class="banner__image">
+                    </div>
+                    <div class="card__wrapper">
+                        <div class="card">
+                            <div class="card__info">
+                                <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1623730/header.jpg"
+                                    alt="Game" class="card__avatar">
+                                <div>
+                                    <span>Palworld</span>
+                                    <p>Survival</p>
+                                </div>
+                            </div>
+                            <button>Get</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <h2 class="subheading">Competitive Multiplayer</h2>
+            <div class="games">
+
+                <div class="banner_wrapper">
+                    <div class="banner">
+                        <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/730/header.jpg"
+                            alt="Banner Game" class="banner__image">
+                    </div>
+                    <div class="card__wrapper">
+                        <div class="card">
+                            <div class="card__info">
+                                <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/730/header.jpg"
+                                    alt="Game" class="card__avatar">
+                                <div>
+                                    <span>Counter-Strike 2</span>
+                                    <p>Tactical Shooter</p>
+                                </div>
+                            </div>
+                            <button>Get</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="banner_wrapper">
+                    <div class="banner">
+                        <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1172470/header.jpg"
+                            alt="Banner Game" class="banner__image">
+                    </div>
+                    <div class="card__wrapper">
+                        <div class="card">
+                            <div class="card__info">
+                                <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1172470/header.jpg"
+                                    alt="Game" class="card__avatar">
+                                <div>
+                                    <span>Apex Legends</span>
+                                    <p>Battle Royale</p>
+                                </div>
+                            </div>
+                            <button>Get</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="banner_wrapper">
+                    <div class="banner">
+                        <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/578080/header.jpg"
+                            alt="Banner Game" class="banner__image">
+                    </div>
+                    <div class="card__wrapper">
+                        <div class="card">
+                            <div class="card__info">
+                                <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/578080/header.jpg"
+                                    alt="Game" class="card__avatar">
+                                <div>
+                                    <span>PUBG: BATTLEGROUNDS</span>
+                                    <p>Battle Royale</p>
+                                </div>
+                            </div>
+                            <button>Get</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="banner_wrapper">
+                    <div class="banner">
+                        <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/359550/header.jpg"
+                            alt="Banner Game" class="banner__image">
+                    </div>
+                    <div class="card__wrapper">
+                        <div class="card">
+                            <div class="card__info">
+                                <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/359550/header.jpg"
+                                    alt="Game" class="card__avatar">
+                                <div>
+                                    <span>Rainbow Six Siege</span>
+                                    <p>Tactical Shooter</p>
+                                </div>
+                            </div>
+                            <button>Get</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="banner_wrapper">
+                    <div class="banner">
+                        <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/570/header.jpg"
+                            alt="Banner Game" class="banner__image">
+                    </div>
+                    <div class="card__wrapper">
+                        <div class="card">
+                            <div class="card__info">
+                                <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/570/header.jpg"
+                                    alt="Game" class="card__avatar">
+                                <div>
+                                    <span>Dota 2</span>
+                                    <p>MOBA</p>
+                                </div>
+                            </div>
+                            <button>Get</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <h2 class="subheading">RPG & Adventure</h2>
+            <div class="games">
+
+                <div class="banner_wrapper">
+                    <div class="banner">
+                        <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1091500/header.jpg"
+                            alt="Banner Game" class="banner__image">
+                    </div>
+                    <div class="card__wrapper">
+                        <div class="card">
+                            <div class="card__info">
+                                <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1091500/header.jpg"
+                                    alt="Game" class="card__avatar">
+                                <div>
+                                    <span>Cyberpunk 2077</span>
+                                    <p>Action RPG</p>
+                                </div>
+                            </div>
+                            <button>Get</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="banner_wrapper">
+                    <div class="banner">
+                        <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1086940/header.jpg"
+                            alt="Banner Game" class="banner__image">
+                    </div>
+                    <div class="card__wrapper">
+                        <div class="card">
+                            <div class="card__info">
+                                <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1086940/header.jpg"
+                                    alt="Game" class="card__avatar">
+                                <div>
+                                    <span>Baldur's Gate 3</span>
+                                    <p>CRPG</p>
+                                </div>
+                            </div>
+                            <button>Get</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="banner_wrapper">
+                    <div class="banner">
+                        <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/105600/header.jpg"
+                            alt="Banner Game" class="banner__image">
+                    </div>
+                    <div class="card__wrapper">
+                        <div class="card">
+                            <div class="card__info">
+                                <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/105600/header.jpg"
+                                    alt="Game" class="card__avatar">
+                                <div>
+                                    <span>Terraria</span>
+                                    <p>Action / Sandbox</p>
+                                </div>
+                            </div>
+                            <button>Get</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="banner_wrapper">
+                    <div class="banner">
+                        <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/292030/header.jpg"
+                            alt="Banner Game" class="banner__image">
+                    </div>
+                    <div class="card__wrapper">
+                        <div class="card">
+                            <div class="card__info">
+                                <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/292030/header.jpg"
+                                    alt="Game" class="card__avatar">
+                                <div>
+                                    <span>The Witcher 3</span>
+                                    <p>Action RPG</p>
+                                </div>
+                            </div>
+                            <button>Get</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="banner_wrapper">
+                    <div class="banner">
+                        <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1245620/header.jpg"
+                            alt="Banner Game" class="banner__image">
+                    </div>
+                    <div class="card__wrapper">
+                        <div class="card">
+                            <div class="card__info">
+                                <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1245620/header.jpg"
+                                    alt="Game" class="card__avatar">
+                                <div>
+                                    <span>Elden Ring</span>
+                                    <p>Action RPG</p>
+                                </div>
+                            </div>
+                            <button>Get</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+
         <div id="hardware" class="section">
             <h1>Hardware Store</h1>
-            <p>Find the best gear to upgrade your battle station and improve your performance.</p>
+            <p>Find the best gear to upgrade your battle station. Click a category to view items!</p>
+            <br>
+
+
         </div>
     </div>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
