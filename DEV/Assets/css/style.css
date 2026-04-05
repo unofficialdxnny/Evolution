@@ -169,27 +169,20 @@ body {
 }
 
 .toggle {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    width: 50px;
-    height: 50px;
-    background: #ee4040;
-    border-radius: 10px;
+    position: relative;
+    min-width: 60px;
+    height: 60px;
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.toggle.active {
-    background: #ff1717;
+    z-index: 100;
 }
 
 .toggle ion-icon {
     position: absolute;
     color: #fff;
-    font-size: 34px;
+    font-size: 2em;
     display: none;
 }
 
@@ -201,10 +194,6 @@ body {
 .toggle ion-icon.close,
 .toggle.active ion-icon.open {
     display: none;
-}
-
-.toggle {
-    z-index: 100;
 }
 
 .main-content {
