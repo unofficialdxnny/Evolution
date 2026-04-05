@@ -33,3 +33,43 @@ for (let i = 0; i < list.length; i++) {
         }
     };
 }
+
+// Theme Toggle Logic
+let themeToggleBtn = document.getElementById("theme-toggle");
+let bodyEl = document.body;
+let moonIcon = document.querySelector(".moon-icon");
+let sunIcon = document.querySelector(".sun-icon");
+let themeTitle = document.querySelector("#theme-toggle .title");
+
+// Check local storage for theme
+let savedTheme = localStorage.getItem("theme");
+if (savedTheme === "dark") {
+    bodyEl.classList.add("dark-mode");
+    if (moonIcon && sunIcon && themeTitle) {
+        moonIcon.style.display = "none";
+        sunIcon.style.display = "inline-block";
+        themeTitle.innerText = "Light Mode";
+    }
+}
+
+if (themeToggleBtn) {
+    themeToggleBtn.onclick = function (e) {
+        e.preventDefault();
+        bodyEl.classList.toggle("dark-mode");
+        
+        let isDark = bodyEl.classList.contains("dark-mode");
+        localStorage.setItem("theme", isDark ? "dark" : "light");
+        
+        if (moonIcon && sunIcon && themeTitle) {
+            if (isDark) {
+                moonIcon.style.display = "none";
+                sunIcon.style.display = "inline-block";
+                themeTitle.innerText = "Light Mode";
+            } else {
+                moonIcon.style.display = "inline-block";
+                sunIcon.style.display = "none";
+                themeTitle.innerText = "Dark Mode";
+            }
+        }
+    };
+}

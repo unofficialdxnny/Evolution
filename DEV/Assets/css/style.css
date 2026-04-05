@@ -464,3 +464,103 @@ button:active {
     color: #666;
     font-size: 0.95em;
 }
+
+/* Bottom Action for Theme Toggle */
+.navigation .bottom-action {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    padding-left: 5px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.navigation .bottom-action a {
+    position: relative;
+    display: flex;
+    width: 100%;
+    text-decoration: none;
+    color: #fff;
+}
+
+.navigation .bottom-action a .icon {
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    line-height: 70px;
+    text-align: center;
+}
+
+.navigation .bottom-action a .icon ion-icon {
+    font-size: 1.5em;
+}
+
+.navigation .bottom-action a .title {
+    position: relative;
+    display: block;
+    padding-left: 10px;
+    height: 60px;
+    line-height: 60px;
+    white-space: normal;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background: #111;
+}
+
+body.dark-mode .main-content {
+    background: #1b1b1b;
+    color: #fff;
+}
+
+body.dark-mode .section h1 {
+    color: #e0e0e0;
+}
+
+body.dark-mode .section p {
+    color: #bbb;
+}
+
+body.dark-mode .subheading {
+    color: #ccc;
+}
+
+body.dark-mode .feature-card {
+    background: #252525;
+}
+
+body.dark-mode .feature-card h3 {
+    color: #fff;
+}
+
+body.dark-mode .feature-card p {
+    color: #aaa;
+}
+
+body.dark-mode .card {
+    background-color: #252525;
+}
+
+body.dark-mode .card__info span {
+    color: #fff;
+}
+
+body.dark-mode .card__info p {
+    color: #919191;
+}
+
+/* Dark Mode Navigation Active Highlight */
+body.dark-mode .navigation ul li.active {
+    background: #111;
+}
+
+body.dark-mode .navigation ul li b:nth-child(1),
+body.dark-mode .navigation ul li b:nth-child(2) {
+    background: #111;
+}
+
+body.dark-mode .navigation ul li.active a {
+    color: #fff;
+}
