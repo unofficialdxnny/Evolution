@@ -274,11 +274,12 @@ body {
     width: 300px;
     height: 70px;
     padding: 1rem;
-    background-color: #252525;
+    background-color: #fff;
     border-radius: 0px 0px 12px 12px;
     justify-content: space-between;
     align-items: center;
     box-sizing: border-box;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
 }
 
 .card__info {
@@ -296,13 +297,13 @@ body {
 }
 
 .card__info span {
-    color: #fff;
+    color: #333;
     font-size: 16px;
     font-weight: 500;
 }
 
 .card__info p {
-    color: #919191;
+    color: #666;
     font-size: 13px;
     font-weight: 400;
 }
