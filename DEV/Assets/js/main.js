@@ -56,10 +56,10 @@ if (themeToggleBtn) {
     themeToggleBtn.onclick = function (e) {
         e.preventDefault();
         bodyEl.classList.toggle("dark-mode");
-        
+
         let isDark = bodyEl.classList.contains("dark-mode");
         localStorage.setItem("theme", isDark ? "dark" : "light");
-        
+
         if (moonIcon && sunIcon && themeTitle) {
             if (isDark) {
                 moonIcon.style.display = "none";
@@ -73,3 +73,15 @@ if (themeToggleBtn) {
         }
     };
 }
+
+const authenticated = false;
+
+document.addEventListener("DOMContentLoaded", function () {
+    if (authenticated) {
+        localStorage.setItem("authenticated", true);
+    } else {
+        localStorage.setItem("authenticated", false);
+
+    }
+});
+
