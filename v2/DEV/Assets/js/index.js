@@ -7,7 +7,7 @@ window.addEventListener('DOMContentLoaded', () => {
         setTimeout(() => {
             splash.classList.add('display-none');
             document.body.style.overflow = 'auto'; // Re-enable scrolling
-        }, 4500);
+        }, 2200);
     } else {
         // Fallback if no splash is present
         document.body.style.overflow = 'auto';
